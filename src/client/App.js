@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {Fragment } from 'react';
 import { renderRoutes } from 'react-router-config';
 import { setUser } from '../redux/actions';
 
-const App = ({ route }) => {
+const App = (props) => {
+	const { route } = props;
+	console.log(props);
   return (
-    <div>
+    <Fragment>
+		App component
       {renderRoutes(route.routes)}
-    </div>
+    </Fragment>
   );
 };
 
 export default {
-  component: App,
-  loadData: ({ dispatch }) => dispatch(setUser())
+  component: App
 };

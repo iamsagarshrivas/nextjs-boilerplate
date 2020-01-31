@@ -1,12 +1,12 @@
-import React from 'react';
 import App from './App';
 import SignIn from "./pages/auth/SignIn";
 import SignUp  from "./pages/auth/SignUp";
 import ForgotPassword from "./pages/auth/ForgotPassword";
-import NotFoundPage from './pages/NotFound'
+import NotFoundPage from './pages/NotFound';
+
 export default [
   {
-    ...App,
+	...App,
     routes: [
       {
         ...SignIn,

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Public() {
+const Public = () => {
 	return (
 		<h1>
 			This is public page

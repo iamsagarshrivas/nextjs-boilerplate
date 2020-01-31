@@ -1,13 +1,13 @@
 import React from 'react'
 
-function SignUp() {
+const SignIn = () => {
 	return (
 		<h1>
-			this is sign up page
+			sign in page
 		</h1>
 	)
 }
 
 export default {
-	component: SignUp
+	component: SignIn
 }

@@ -1,7 +1,8 @@
 const express = require('express')
-const { createStore } = require('../../redux/store');
+const createStore = require('../../redux/store').default;
 const { matchRoutes } = require('react-router-config')
-const { renderer } =require('../../helper/renderer')
+const renderer =require('../../helper/renderer').default
+const Routes = require('../../client/routes').default;
 
 module.exports = (apiRoot, routes) => {
 	const app = express()

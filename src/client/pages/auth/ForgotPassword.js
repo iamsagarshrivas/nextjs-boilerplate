@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ForgotPassword() {
+const ForgotPassword = () => {
 	return (
 		<h1>
 			this is forgot password page

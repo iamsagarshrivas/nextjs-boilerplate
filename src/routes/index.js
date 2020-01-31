@@ -1,12 +1,10 @@
 var router = require('express').Router();
-const React = require('react');
-const { renderToString } =require('react-dom/server')
-const Home = require('../client/components/app');
 
-router.get('/', (req, res) => {
-	const content = renderToString(<Home />);
-	res.send(content);
+router.get('/some', (req, res) => {
+	// const content = renderToString(<Home />);
+	// res.send(content);
 
+	res.json({aa:'working'})
 })
 
 module.exports = router; 

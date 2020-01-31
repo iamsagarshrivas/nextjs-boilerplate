@@ -6,8 +6,7 @@ import { renderRoutes } from 'react-router-config';
 import serialize from 'serialize-javascript';
 import { Helmet } from 'react-helmet';
 import Routes from '../client/routes';
-
-export const renderer = (req, store, context) => {
+export default (req, store, context) => {
   const content = renderToString(
     <Provider store={store}>
       <StaticRouter location={req.path} context={context}>

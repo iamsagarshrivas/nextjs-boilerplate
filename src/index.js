@@ -1,5 +1,5 @@
 const http = require('http');
-const { port, apiRoot, ip, mongo, seed, env } = require('./config');
+const { port, apiRoot, ip, env } = require('./config');
 const express = require('./middleware/express');
 const routes = require('./routes'); 
 
